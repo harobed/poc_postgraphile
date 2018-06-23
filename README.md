@@ -33,3 +33,18 @@ Test this [GraphQL](https://en.wikipedia.org/wiki/GraphQL) query:
   }
 }
 ```
+
+
+```
+{
+  searchPosts(search: "Ameliorated", first: 5) {
+    edges {
+      cursor
+      node {
+        headline
+        body
+      }
+    }
+  }
+}
+```
